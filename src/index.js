@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
+import SaludoPadre from './Components/SaludoPadre';
+import PadreMatematicas from './Components/PadreMatematicas';
+import Car from './Components/Coches/Car';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <Car marca="Audi" modelo="Q8" velocidadMaxima="240" aceleracion="25"/>
+      <Car marca="Pontiac" modelo="FireBird" velocidadMaxima="240" aceleracion="40"/>
   </React.StrictMode>
 );
 
